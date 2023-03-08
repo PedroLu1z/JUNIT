@@ -1,0 +1,41 @@
+//calculadora que opera as funções aritiméticas basicas com números inteiros
+public class Calculadora {
+	//atributo que guarda o resultado de um calculo
+	private int resultadoCalculo = 0;
+	
+	//métodos de calculo
+	
+	//somar
+	public int somar(int variavel1, int variavel2){
+		resultadoCalculo = variavel1 + variavel2;
+		return resultadoCalculo;
+	}
+	
+	//subtrair
+	public int subtrair(int variavel1, int variavel2){
+		resultadoCalculo = variavel1 - variavel2;
+		return resultadoCalculo;
+	}
+	
+	//multiplicar
+	public int multiplicar(int variavel1, int variavel2){
+		resultadoCalculo = variavel1*variavel2;
+		return resultadoCalculo;
+	}
+	
+	//dividir
+	public int dividir(int variavel1, int variavel2){
+		resultadoCalculo = variavel1/variavel2;
+		return resultadoCalculo;
+	}
+	
+	//getters  e setters
+	
+	public int getResultadoCalculo() {
+		return resultadoCalculo;
+	}
+
+	public void setResultadoCalculo(int resultadoCalculo) {
+		this.resultadoCalculo = resultadoCalculo;
+	}
+}

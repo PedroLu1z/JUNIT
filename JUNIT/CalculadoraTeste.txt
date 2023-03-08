@@ -1,0 +1,85 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculadoraTeste {
+
+	@Test
+	// teste de soma de 2 com 5, resultando em 7
+	public void testeSoma2com5() {
+		//variaveis de controle de teste
+		int variavel1 = 2;
+		int variavel2 = 5;
+		int resultadoEsperavel = 7;
+		
+		//disparar o calculo
+		Calculadora calc = new Calculadora();
+		int resultadoReal = calc.somar(variavel1, variavel2);
+		
+		//avaliar o resultado
+		assertEquals(resultadoReal, resultadoEsperavel);
+	}
+	@Test
+	// teste de soma de 2 com 5, resultando em 7
+	public void testeSoma5com5() {
+		//variaveis de controle de teste
+		int variavel1 = 5;
+		int variavel2 = 5;
+		int resultadoEsperavel = 10;
+		
+		//disparar o calculo
+		Calculadora calc = new Calculadora();
+		int resultadoReal = calc.somar(variavel1, variavel2);
+		
+		//avaliar o resultado
+		assertEquals(resultadoReal, resultadoEsperavel);
+	}
+	
+	@Test
+	// teste de soma de 2 com 5, resultando em 7
+	public void testeSubtrair5de8() {
+		//variaveis de controle de teste
+		int variavel1 = 8;
+		int variavel2 = 5;
+		int resultadoEsperavel = 3;
+		
+		//disparar o calculo
+		Calculadora calc = new Calculadora();
+		int resultadoReal = calc.subtrair(variavel1, variavel2);
+		
+		//avaliar o resultado
+		assertEquals(resultadoReal, resultadoEsperavel);
+	}
+	
+	@Test
+	// teste de soma de 2 com 5, resultando em 7
+	public void testeMultiplicar7com10() {
+		//variaveis de controle de teste
+		int variavel1 = 7;
+		int variavel2 = 10;
+		int resultadoEsperavel = 70;
+		
+		//disparar o calculo
+		Calculadora calc = new Calculadora();
+		int resultadoReal = calc.multiplicar(variavel1, variavel2);
+		
+		//avaliar o resultado
+		assertEquals(resultadoReal, resultadoEsperavel);
+	}
+	
+	@Test
+	// teste de soma de 2 com 5, resultando em 7
+	public void testeDividir4com2() {
+		//variaveis de controle de teste
+		int variavel1 = 4;
+		int variavel2 = 2;
+		int resultadoEsperavel = 2;
+		
+		//disparar o calculo
+		Calculadora calc = new Calculadora();
+		int resultadoReal = calc.dividir(variavel1, variavel2);
+		
+		//avaliar o resultado
+		assertEquals(resultadoReal, resultadoEsperavel);
+	}
+}
